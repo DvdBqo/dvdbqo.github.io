@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Todo Artículos - DvdBqo</title>
+        <link>http://example.org/posts/</link>
+        <description>Todo Artículos | DvdBqo</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Fri, 07 Jan 2022 17:55:33 &#43;0000</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Un Poco más sobre mi</title>
+    <link>http://example.org/posts/segundo_post/</link>
+    <pubDate>Fri, 07 Jan 2022 17:55:33 &#43;0000</pubDate>
+    <author>Autor</author>
+    <guid>http://example.org/posts/segundo_post/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Hola Blog</title>
+    <link>http://example.org/posts/hola-blog/</link>
+    <pubDate>Tue, 04 Jan 2022 16:56:56 &#43;0000</pubDate>
+    <author>Autor</author>
+    <guid>http://example.org/posts/hola-blog/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/primer/featured-image.jpg" referrerpolicy="no-referrer">
+            </div><p>Desarrollo de una web estática usando HUGO con la plantilla LoveIt.</p>]]></description>
+</item></channel>
+</rss>

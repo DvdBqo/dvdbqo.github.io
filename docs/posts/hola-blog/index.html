@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/hola-blog\/"
-        },"genre": "posts","keywords": "HUGO, Go, blog","wordcount":  2378 ,
+        },"genre": "posts","keywords": "HUGO, Go, blog","wordcount":  2333 ,
         "url": "\/posts\/hola-blog\/","datePublished": "2022-01-04T16:56:56+00:00","dateModified": "2022-01-04T16:56:56+00:00","publisher": {
             "@type": "Organization",
             "name": "David Baquero D."},"author": {
@@ -77,8 +77,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Hola Blog</h1><h2 class="single-subtitle">Primer post</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>David Baquero D.</a></span>&nbsp;<span class="post-category">incluido en <a href="/categories/web/"><i class="far fa-folder fa-fw"></i>Web</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-04">2022-01-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2378 palabras&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;12 minutos&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-04">2022-01-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2333 palabras&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;11 minutos&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -414,50 +414,44 @@ tip(carpeta lib)</li>
 <p>git debe estar configurado con nuestra cuenta github además debes de configurar un <a href="https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank" rel="noopener noreffer">token</a> que será tu contraseña en el momento de subir los archivos.</p>
 <p>La forma de apuntar al repositorio de github se puede observar nada más abrir el repositorio.</p>
 <pre tabindex="0"><code class="language-git" data-lang="git">   git branch -M master   
-   git push -u origin master```  
-
-Acto seguido te pedira tu usuario de github y la password asociada a tu token.
-
-
-Añade un nuevo archivo a tu repositorio con la siguiente ruta ```.github/workflows/gh-pages.yml```. Esto creará un archivo gh-pages.yml en la carpeta *.github/workflows/*.
-
-En este archivo copia el siguiente código:
-
-```yml
-name: github pages
-
-on:
-  push:
-    branches:
-      - main  # Set a branch to deploy
-  pull_request:
-
-jobs:
-  deploy:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-          # extended: true
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-
-</code></pre><p>Ahora debes subir el archivo conf.toml de tu web asegurandote de cambiar la URL por el nombre de tu repositorio.</p>
+   git push -u origin master
+</code></pre><p>Acto seguido te pedira tu usuario de github y la password asociada a tu token.</p>
+<p>Añade un nuevo archivo a tu repositorio con la siguiente ruta <code>.github/workflows/gh-pages.yml</code>. Esto creará un archivo gh-pages.yml en la carpeta <em>.github/workflows/</em>.</p>
+<p>En este archivo copia el siguiente código:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">github pages</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">main </span><span class="w"> </span><span class="c"># Set a branch to deploy</span><span class="w">
+</span><span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-20.04</span><span class="w">
+</span><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">submodules</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">  </span><span class="c"># Fetch Hugo themes (true OR recursive)</span><span class="w">
+</span><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">    </span><span class="c"># Fetch all history for .GitInfo and .Lastmod</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup Hugo</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-hugo@v2</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;latest&#39;</span><span class="w">
+</span><span class="w">          </span><span class="c"># extended: true</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build</span><span class="w">
+</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">hugo --minify</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v3</span><span class="w">
+</span><span class="w">        </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l">github.ref == &#39;refs/heads/main&#39;</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">github_token</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GITHUB_TOKEN }}</span><span class="w">
+</span><span class="w">          </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
+</span><span class="w">
+</span></code></pre></div><p>Ahora debes subir el archivo conf.toml de tu web asegurandote de cambiar la URL por el nombre de tu repositorio.</p>
 <p>En total nuestro proyecto en Github debe contener tres archivos:</p>
 <ul>
 <li>el archivo conf.tolm <strong>Cambiar Url por User.github.io</strong>.</li>

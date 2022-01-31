@@ -1,7 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Web - Categoría - DvdBqo</title>
-<<<<<<< HEAD
         <link>/categories/web/</link>
         <description>Web - Categoría - DvdBqo</description>
         <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 04 Jan 2022 16:56:56 &#43;0000</lastBuildDate><atom:link href="/categories/web/" rel="self" type="application/rss+xml" /><item>
@@ -13,18 +12,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/primer/featured-image.jpg" referrerpolicy="no-referrer">
             </div><p>Desarrollo de una web estática usando HUGO con la plantilla LoveIt. Adquisición de dominio propio en Namecheap y hosting en Github Pages.</p>]]></description>
-=======
-        <link>http://example.org/categories/web/</link>
-        <description>Web - Categoría - DvdBqo</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 04 Jan 2022 16:56:56 &#43;0000</lastBuildDate><atom:link href="http://example.org/categories/web/" rel="self" type="application/rss+xml" /><item>
-    <title>Hola Blog</title>
-    <link>http://example.org/posts/hola-blog/</link>
-    <pubDate>Tue, 04 Jan 2022 16:56:56 &#43;0000</pubDate>
-    <author>Autor</author>
-    <guid>http://example.org/posts/hola-blog/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/primer/featured-image.jpg" referrerpolicy="no-referrer">
-            </div><p>Desarrollo de una web estática usando HUGO con la plantilla LoveIt.</p>]]></description>
->>>>>>> b283ed0a590244468634f7950d9df7066710aa55
 </item></channel>
 </rss>

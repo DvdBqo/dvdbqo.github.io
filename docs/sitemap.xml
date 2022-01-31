@@ -2,7 +2,6 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-<<<<<<< HEAD
             <loc>/about/</loc><lastmod>2022-01-07T18:27:10&#43;00:00</lastmod></url><url>
             <loc>/categories/</loc><lastmod>2022-01-07T17:55:33&#43;00:00</lastmod></url><url>
             <loc>/</loc><lastmod>2022-01-07T17:55:33&#43;00:00</lastmod></url><url>
@@ -17,19 +16,3 @@
             <loc>/posts/hola-blog/</loc><lastmod>2022-01-04T16:56:56&#43;00:00</lastmod></url><url>
             <loc>/tags/hugo/</loc><lastmod>2022-01-04T16:56:56&#43;00:00</lastmod></url><url>
             <loc>/categories/web/</loc><lastmod>2022-01-04T16:56:56&#43;00:00</lastmod></url></urlset>
-=======
-            <loc>http://example.org/about/</loc><lastmod>2022-01-07T18:27:10&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/categories/</loc><lastmod>2022-01-07T17:55:33&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/</loc><lastmod>2022-01-07T17:55:33&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/categories/life-style/</loc><lastmod>2022-01-07T17:55:33&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/tags/machine-learning/</loc><lastmod>2022-01-07T17:55:33&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/posts/</loc><lastmod>2022-01-07T17:55:33&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/tags/python/</loc><lastmod>2022-01-07T17:55:33&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/tags/</loc><lastmod>2022-01-07T17:55:33&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/posts/segundo_post/</loc><lastmod>2022-01-07T17:55:33&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/tags/blog/</loc><lastmod>2022-01-04T16:56:56&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/tags/go/</loc><lastmod>2022-01-04T16:56:56&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/posts/hola-blog/</loc><lastmod>2022-01-04T16:56:56&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/tags/hugo/</loc><lastmod>2022-01-04T16:56:56&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/categories/web/</loc><lastmod>2022-01-04T16:56:56&#43;00:00</lastmod></url></urlset>
->>>>>>> b283ed0a590244468634f7950d9df7066710aa55

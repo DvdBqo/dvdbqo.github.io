@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Life Style - Categoría - DvdBqo</title>
+        <link>/categories/life-style/</link>
+        <description>Life Style - Categoría - DvdBqo</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Fri, 07 Jan 2022 17:55:33 &#43;0000</lastBuildDate><atom:link href="/categories/life-style/" rel="self" type="application/rss+xml" /><item>
+    <title>Un Poco más sobre mi</title>
+    <link>/posts/segundo_post/</link>
+    <pubDate>Fri, 07 Jan 2022 17:55:33 &#43;0000</pubDate>
+    <author>Autor</author>
+    <guid>/posts/segundo_post/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>
